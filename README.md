@@ -3,10 +3,14 @@
 Helper Code and Datasets for the 1st Workshop on Scaling Up Multilingual Evaluation (SUMEval).
 
 Test sets containing new configurations but same languages as seen in the training data. These are often denoted without any suffix, for eg: **data/test_release/XNLI_XLMR.json**
+
 Test sets containing new languages aka surprise languages but same configurations as the ones seen during training. These are denoted by the suffix '_surprise_langs_same_configs', for eg: data/test_release/XNLI_XLMR_surprise_langs_same_configs.json
+
 Test sets containing surprise languages as well as new configurations. These are denoted by the suffix '_surprise_langs_diff_configs', for eg: data/test_release/XNLI_XLMR_surprise_langs_diff_configs.json
+
 All the test files are of the following format:
 
+```
 [
   {
     "train_config": {
@@ -25,8 +29,8 @@ All the test files are of the following format:
     }
   
   }
-
 ]
+```
 The participants predict the "x" values in these files by training predictor models on the training data, and replace "x" with the predicted values in these files. For instance one can generate the predictions for GMU-Task System by running:
 
 python -m src.sum_eval_predict --data_dir ./data --out_dir ./Baselines --model xlmr
