@@ -1,4 +1,4 @@
-#GMU SumEval Systems
+# GMU SumEval Systems
 
 Helper Code and Datasets for the 1st Workshop on Scaling Up Multilingual Evaluation (SUMEval).
 
