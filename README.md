@@ -44,6 +44,6 @@ python -m src.sum_eval_predict --data_dir ./data --out_dir ./Baselines --model b
 ```
 To create the GMU-Ensemble system predictions, run the following:
 ```
-python ensemble.py --output_data_path1 $Input_Prediction_directory1 --output_data_path2 $Input_Prediction_directory2 --output_ensemble_data_dir $OUTPUT_Directory
+python SumEval/ensemble.py --output_data_path1 $Input_Prediction_directory1 --output_data_path2 $Input_Prediction_directory2 --output_ensemble_data_dir $OUTPUT_Directory
 ```
 Where $Input_Prediction_directory1 and $Input_Prediction_directory2 will contain predictions for the two system we need to combine.
